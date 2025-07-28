@@ -5,7 +5,7 @@ namespace Ambev.DeveloperEvaluation.Application.Sales.CreateSale;
 /// <summary>
 /// Validator for individual sale items in CreateSaleCommand.
 /// </summary>
-public class CreateSaleItemValidator : AbstractValidator<CreateSaleItem>
+public class CreateSaleItemValidator : AbstractValidator<SaleItem>
 {
     public CreateSaleItemValidator()
     {

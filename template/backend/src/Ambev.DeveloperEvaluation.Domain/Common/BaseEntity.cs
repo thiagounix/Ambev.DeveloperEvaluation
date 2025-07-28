@@ -10,6 +10,8 @@ public class BaseEntity : IComparable<BaseEntity>
     {
         return Validator.ValidateAsync(this);
     }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     public int CompareTo(BaseEntity? other)
     {

@@ -6,12 +6,12 @@ namespace Ambev.DeveloperEvaluation.Application.Sales.CreateSale;
 /// <summary>
 /// Profile for mapping between CreateSaleCommand and Sale entity.
 /// </summary>
-public class CreateSaleProfile : Profile
-{
-    public CreateSaleProfile()
+    public class CreateSaleProfile : Profile
     {
-        CreateMap<CreateSaleCommand, Sale>();
-        CreateMap<CreateSaleItem, SaleItem>();
-        CreateMap<Sale, CreateSaleResult>();
+        public CreateSaleProfile()
+        {
+            CreateMap<CreateSaleCommand, Sale>();
+            CreateMap<SaleItem, Domain.Entities.SaleItem>();
+            CreateMap<Sale, CreateSaleResult>();
+        }
     }
-}
